@@ -9,16 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(MockData.items) {
+                    item in
+
+                    Circle()
+                        .containerRelativeFrame(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/, count: 1, spacing: 16.0)
+                        .foregroundStyle(item.color.gradient)
+                        .scrollTransition{ content, phase in content
+                                .opacity(phase.isIdentity ? 1.0 : 0.0)
+                                .scaleEffect(x: phase.isIdentity ? 1.0 : 0.3,
+                                             y: phase.isIdentity ? 1.0 : 0.3)
+                                .offset(y: phase.isIdentity ? 0 : 50)
+                        }
+                }
+            }
+            .scrollTargetLayout()
+            
         }
-        .padding()
+        .contentMargins(16, for: .scrollContent)
+        .scrollTargetBehavior(.viewAligned)
     }
 }
 
 #Preview {
     ContentView()
+}
+
+
+struct Item: Identifiable{
+    let id = UUID()
+    let color: Color
+}
+
+struct MockData{
+    static var items = [Item(color: .blue),
+                        Item(color: .cyan),
+                        Item(color: .gray),
+                        Item(color: .green),
+                        Item(color: .indigo)]
 }
