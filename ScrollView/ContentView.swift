@@ -12,15 +12,16 @@ struct ContentView: View {
         ScrollView(.horizontal) {
             HStack {
                 ForEach(MockData.items) {
+                    
                     item in
 
                     Circle()
-                        .containerRelativeFrame(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/, count: 1, spacing: 16.0)
+                        .containerRelativeFrame(.horizontal, count: 1, spacing: 16.0)
                         .foregroundStyle(item.color.gradient)
                         .scrollTransition{ content, phase in content
                                 .opacity(phase.isIdentity ? 1.0 : 0.0)
-                                .scaleEffect(x: phase.isIdentity ? 1.0 : 0.3,
-                                             y: phase.isIdentity ? 1.0 : 0.3)
+                                .scaleEffect(x: phase.isIdentity ? 1.0 : 0.8,
+                                             y: phase.isIdentity ? 1.0 : 0.8)
                                 .offset(y: phase.isIdentity ? 0 : 50)
                         }
                 }

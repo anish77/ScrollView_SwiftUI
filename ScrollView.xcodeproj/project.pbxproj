@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2F8C942C2BDF5A002A7D09 /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F8C932C2BDF5A002A7D09 /* searchBar.swift */; };
+		9F91893E2C298ED900E319DF /* CircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F91893D2C298ED900E319DF /* CircleAnimation.swift */; };
+		9FB48E392BECF06B003DBD19 /* SettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB48E382BECF06B003DBD19 /* SettingsUIView.swift */; };
+		9FB48E3B2BECF0F4003DBD19 /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB48E3A2BECF0F4003DBD19 /* TabUIView.swift */; };
 		9FD033AA2BE969140053DE82 /* ScrollViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD033A92BE969140053DE82 /* ScrollViewApp.swift */; };
 		9FD033AC2BE969140053DE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD033AB2BE969140053DE82 /* ContentView.swift */; };
 		9FD033AE2BE969150053DE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD033AD2BE969150053DE82 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F2F8C932C2BDF5A002A7D09 /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
+		9F91893D2C298ED900E319DF /* CircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimation.swift; sourceTree = "<group>"; };
+		9FB48E382BECF06B003DBD19 /* SettingsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUIView.swift; sourceTree = "<group>"; };
+		9FB48E3A2BECF0F4003DBD19 /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
 		9FD033A62BE969140053DE82 /* ScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD033A92BE969140053DE82 /* ScrollViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewApp.swift; sourceTree = "<group>"; };
 		9FD033AB2BE969140053DE82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F91893C2C298E9600E319DF /* icon&Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9F91893D2C298ED900E319DF /* CircleAnimation.swift */,
+				9F2F8C932C2BDF5A002A7D09 /* searchBar.swift */,
+			);
+			path = "icon&Animation";
+			sourceTree = "<group>";
+		};
 		9FD0339D2BE969140053DE82 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +68,11 @@
 		9FD033A82BE969140053DE82 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				9F91893C2C298E9600E319DF /* icon&Animation */,
 				9FD033A92BE969140053DE82 /* ScrollViewApp.swift */,
 				9FD033AB2BE969140053DE82 /* ContentView.swift */,
+				9FB48E3A2BECF0F4003DBD19 /* TabUIView.swift */,
+				9FB48E382BECF06B003DBD19 /* SettingsUIView.swift */,
 				9FD033AD2BE969150053DE82 /* Assets.xcassets */,
 				9FD033AF2BE969150053DE82 /* Preview Content */,
 			);
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB48E392BECF06B003DBD19 /* SettingsUIView.swift in Sources */,
+				9FB48E3B2BECF0F4003DBD19 /* TabUIView.swift in Sources */,
 				9FD033AC2BE969140053DE82 /* ContentView.swift in Sources */,
+				9F91893E2C298ED900E319DF /* CircleAnimation.swift in Sources */,
 				9FD033AA2BE969140053DE82 /* ScrollViewApp.swift in Sources */,
+				9F2F8C942C2BDF5A002A7D09 /* searchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
