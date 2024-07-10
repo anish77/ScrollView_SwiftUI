@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CircleAnimation: View {
-    @Binding var circleA: CGFloat
+    //@Binding var circleA: CGFloat
+    @State var circleA = 0.5
     var body: some View {
         VStack{
             Button {
@@ -23,7 +24,7 @@ struct CircleAnimation: View {
                         .frame(width: 40, height: 40)
                         .rotationEffect(.degrees(-90))
                     Circle()
-                        .frame(width: 40, height: 4)
+                        .frame(width: 4, height: 4)
                         .offset(y: -20)
                 }
             }
@@ -39,7 +40,7 @@ struct CircleAnimation: View {
                         .frame(width: 40, height: 40)
                         .rotationEffect(.degrees(90))
                     Circle()
-                        .frame(width: 40, height: 4)
+                        .frame(width: 4, height: 4)
                         .offset(y: 20)
                 }
             }
@@ -51,6 +52,7 @@ struct CircleAnimation: View {
 
 struct CircleAnimation_Preview: PreviewProvider {
     static var previews: some View {
-        CircleAnimation(circleA: .constant(0.5))
+        //CircleAnimation(circleA: .constant(0.5))
+        CircleAnimation()
     }
 }
