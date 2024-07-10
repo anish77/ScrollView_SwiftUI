@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct searchBar: View {
+struct SearchBar: View {
     @State var state = false
     @Namespace var namespace
     var body: some View {
@@ -55,5 +55,5 @@ struct searchBar: View {
 }
 
 #Preview {
-    searchBar()
+    SearchBar()
 }
